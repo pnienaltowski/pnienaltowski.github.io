@@ -1,174 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Patryk Nienaltowski</title>
+    <meta name="description" content="Homepage of Wenzer Qin.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
+    <meta name="google-site-verification" content="t_BAW3sTshgfBeOAuNlP1pk4_0JrsPW3adB_mP89894">
     <style>
         body {
-            background-color: #FFCC99; /* Pastel orange background */
-            color: #000000; /* Black text color */
-            font-family: 'Cambria', serif; /* Cambria font */
+            font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
+            background-color: #FFCC99;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
-        .container {
+        header {
+            text-align: center;
+            background-color: #F9F0EC;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            color: #6E0420;
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #99091A;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            min-height: 250px;
             max-width: 800px;
             margin: auto;
-            padding: 20px;
-            border-radius: 8px; /* Rounded corners */
+            padding: 15px;
         }
 
-        /* Tabs container styling */
-        .tabs {
-            overflow: hidden;
-            background: #f1f1f1; /* Light grey background for tabs */
-            font-family: 'Cambria', serif;
-            border-radius: 8px; /* Rounded corners for tabs */
-        }
-
-        .tab {
+        .main-content img {
             float: left;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: background-color 0.3s;
-            border: none; /* No border for individual tabs */
-            outline: none;
-            text-align: center;
-        }
-
-        /* Change background color of tabs on hover */
-        .tab:hover {
-            background-color: #ddd; /* Lighter grey for hover */
-        }
-
-        /* Style for the active tab */
-        .tab.active {
-            background-color: #ccc; /* Even lighter grey for active tab */
-        }
-
-        .tab-content {
-            padding: 20px;
-            border: 1px solid #ddd; /* Light grey border for content */
-            border-top: none; /* No top border to merge with tabs */
-        }
-
-        h1, h2 {
-            color: #333333; /* Dark grey color for headings */
+            margin-right: 20px;
+            margin-bottom: 5px;
+            border: 3px solid #ddd;
         }
 
         p {
-            line-height: 1.6; /* Spacing between lines */
+            line-height: 1.5;
+            text-align: justify;
         }
 
-        a {
-            color: #0056b3; /* Blue color for links */
-            text-decoration: none; /* No underline on links */
+        footer {
+            text-align: center;
+            background-color: #EFEFEF;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            font-size: 0.9em;
         }
 
-        a:hover {
-            text-decoration: underline; /* Underline on hover */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
         }
-
-        .project-title {
-            font-weight: bold; /* Bold font for project title */
-        }
-
-        .publications {
-            margin-top: 10px;
-        }
-
-        .publications li {
-            margin-bottom: 5px;
-        }
-
-        .project-divider {
-            border-bottom: 1px solid #000000; /* Black horizontal line */
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My Personal Page</h1>
-        <div class="tabs">
-            <button class="tab active" onclick="openTab(event, 'Main')">Main</button>
-            <button class="tab" onclick="openTab(event, 'Research')">Research</button>
-            <button class="tab" onclick="openTab(event, 'CV')">CV</button>
-        </div>
+    <header>
+        <h1>Patryk Nienaltowski</h1>
+    </header>
 
-        <div id="Main" class="tab-content" style="display: block;">
-            <h2>About Me</h2>
-            <p>Hello, I am [Your Name]. Welcome to my personal page. Here, you can find more about my hobbies, work, and some of the projects I've been working on.</p>
-            <p>I am a [Your Profession] with a passion for [Your Passion]. I've been involved in [Brief Description of Your Experience or Projects].</p>
-        </div>
+    <nav>
+        <a href="./index.html">Main</a> |
+        <a href="./research.html">Research</a> |
+        <a href="./resume-cv.pdf">CV</a>
+    </nav>
 
-        <div id="Research" class="tab-content" style="display: none;">
-            <h2>My Research</h2>
-            <!-- Project 1 -->
-            <div class="research-project">
-                <p class="project-title">Project Title One</p>
-                <p>Description of Project One. Here you can add a more detailed explanation of what this project was about, the objectives, and any significant outcomes that were achieved.</p>
-                <ul class="publications">
-                    <li><a href="https://example.com/publication1">Publication One</a> - Short description of Publication One.</li>
-                    <li><a href="https://example.com/publication2">Publication Two</a> - Short description of Publication Two.</li>
-                </ul>
-                <div class="project-divider"></div>
-            </div>
+    <hr>
 
-            <!-- Project 2 -->
-            <div class="research-project">
-                <p class="project-title">Project Title Two</p>
-                <p>Description of Project Two. This project focused on different aspects and here you would describe what those were, the research methodology, and any findings.</p>
-                <ul class="publications">
-                    <li><a href="https://example.com/publication3">Publication Three</a> - Short description of Publication Three.</li>
-                    <li><a href="https://example.com/publication4">Publication Four</a> - Short description of Publication Four.</li>
-                </ul>
-                <div class="project-divider"></div>
-            </div>
+    <main class="main-content">
+        <img src="./profile3.jpg" alt="Wenzer Qin" height="320" width="220">
+        <p>
+            I am a doctoral student and <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/"> MSC Early Stage Researcher </a> at the <a href="https://www.lynceetec.com/"> Lyncee Tec </a> and <a href="https://baug.ethz.ch/en/">ETH Department of Civil, Environmental and Geomatic Engineering </a>.
+            I study microbial motility with <a href="https://stockerlab.ethz.ch/">Roman Stocker</a>'s group at the <a href="https://ifu.ethz.ch/">Institute of Environmental Engineering </a>,
+            with a special interest in 3D tracking and digital holography microscopy.
+        </p>
+        
+        <p>
+            Prior to starting at ETH in 2021, I was an undergraduate at <a href="https://www.mchtr.pw.edu.pl/www_mchtr_eng"> WUT Department of Mechatronics</a>, where I majored in mechatronics and photonics engineering. During this time, I also worked on a number of projects in <a href="https://biophase.pl/"> BioPhase Imaging </a> group while supervised by <a href="https://repo.pw.edu.pl/info/author/WUT56101/Ma%25C5%2582gorzata%2BKujawi%25C5%2584ska+title?lang=en">Malgorzata Kujawinska</a>.
+        </p>
+    </main>
 
-            <!-- Project 3 -->
-            <div class="research-project">
-                <p class="project-title">Project Title Three</p>
-                <p>Description of Project Three. Include information about the scope of this project, any collaborative efforts, and key results.</p>
-                <ul class="publications">
-                    <li><a href="https://example.com/publication5">Publication Five</a> - Short description of Publication Five.</li>
-                    <li><a href="https://example.com/publication6">Publication Six</a> - Short description of Publication Six.</li>
-                </ul>
-            </div>
-        </div>
+    <hr>
 
-        <div id="CV" class="tab-content" style="display: none;">
-            <h2>My Curriculum Vitae (CV)</h2>
-            <p>Here are some highlights of my CV:</p>
-            <ul>
-                <li><a href="#">Link to my detailed CV</a> - Alternatively, a brief overview can go here.</li>
-            </ul>
-        </div>
-    </div>
-
-    <script>
-        // Function to switch between tabs
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            // Get all elements with class="tab-content" and hide them
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            // Get all elements with class="tab" and remove the class "active"
-            tablinks = document.getElementsByClassName("tab");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    <footer>
+        <strong>Contact Information</strong><br><br>
+        Lyncee Tec<br>
+        Innovation Park, Bâtiment-A<br>
+        Lausanne, 1015<br><br>
+        Email: patryk.nienaltowski at lynceetec.com<br>
+        <p>
+        Institute of Environmental Engineering<br>
+        ETH Zurich<br>
+        Laura-Hezner-Weg 7<br>
+        Zurich, 8093<br><br>
+        Email: nienaltowski at ifu.baug.ethz.ch<br>
+        ORCID: 0000-0003-2308-9450
+        </p>
+    </footer>
 </body>
-</html>
 
+</html>
