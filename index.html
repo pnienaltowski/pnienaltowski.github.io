@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patryk Nienaltowski</title>
+    <title>Personal Page</title>
     <style>
         body {
-            background-color: #FFE376; /* Pastel orange background */
+            background-color: #FFCC99; /* Pastel orange background */
             color: #000000; /* Black text color */
             font-family: 'Cambria', serif; /* Cambria font */
             margin: 0;
@@ -70,11 +70,30 @@
         a:hover {
             text-decoration: underline; /* Underline on hover */
         }
+
+        .project-title {
+            font-weight: bold; /* Bold font for project title */
+        }
+
+        .publications {
+            margin-top: 10px;
+        }
+
+        .publications li {
+            margin-bottom: 5px;
+        }
+
+        .project-divider {
+            border-bottom: 1px solid #000000; /* Black horizontal line */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Patryk Nienaltowski</h1>
+        <h1>Welcome to My Personal Page</h1>
         <div class="tabs">
             <button class="tab active" onclick="openTab(event, 'Main')">Main</button>
             <button class="tab" onclick="openTab(event, 'Research')">Research</button>
@@ -89,12 +108,37 @@
 
         <div id="Research" class="tab-content" style="display: none;">
             <h2>My Research</h2>
-            <p>Here is some information about my research works:</p>
-            <ul>
-                <li><a href="#">Research Topic One</a> - Description of Research One.</li>
-                <li><a href="#">Research Topic Two</a> - Description of Research Two.</li>
-                <li><a href="#">Research Topic Three</a> - Description of Research Three.</li>
-            </ul>
+            <!-- Project 1 -->
+            <div class="research-project">
+                <p class="project-title">Project Title One</p>
+                <p>Description of Project One. Here you can add a more detailed explanation of what this project was about, the objectives, and any significant outcomes that were achieved.</p>
+                <ul class="publications">
+                    <li><a href="https://example.com/publication1">Publication One</a> - Short description of Publication One.</li>
+                    <li><a href="https://example.com/publication2">Publication Two</a> - Short description of Publication Two.</li>
+                </ul>
+                <div class="project-divider"></div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="research-project">
+                <p class="project-title">Project Title Two</p>
+                <p>Description of Project Two. This project focused on different aspects and here you would describe what those were, the research methodology, and any findings.</p>
+                <ul class="publications">
+                    <li><a href="https://example.com/publication3">Publication Three</a> - Short description of Publication Three.</li>
+                    <li><a href="https://example.com/publication4">Publication Four</a> - Short description of Publication Four.</li>
+                </ul>
+                <div class="project-divider"></div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="research-project">
+                <p class="project-title">Project Title Three</p>
+                <p>Description of Project Three. Include information about the scope of this project, any collaborative efforts, and key results.</p>
+                <ul class="publications">
+                    <li><a href="https://example.com/publication5">Publication Five</a> - Short description of Publication Five.</li>
+                    <li><a href="https://example.com/publication6">Publication Six</a> - Short description of Publication Six.</li>
+                </ul>
+            </div>
         </div>
 
         <div id="CV" class="tab-content" style="display: none;">
@@ -127,3 +171,4 @@
     </script>
 </body>
 </html>
+
