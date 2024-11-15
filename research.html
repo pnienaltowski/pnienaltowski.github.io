@@ -2,7 +2,7 @@
 <head>
 <title>Research</title>
 <meta charset="UTF-8">
-<meta name="description" content="A summary of my current research interests and past projects.">
+<meta name="description" content="A summary of my current research and projects.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
@@ -14,18 +14,6 @@ body {
     margin: 0;
     padding: 0;
     text-align: justify;
-}
-
-h1 {
-    color: #ABABAB;
-    font-family: Impact, sans-serif;
-    font-size: 2.5em;
-    text-align: center;
-    padding-bottom: 0;
-    margin-bottom: 5px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h2 {
@@ -66,6 +54,11 @@ a:link, a:visited {
     padding: 5px 15px;
 }
 
+#menu a.active {
+    font-weight: bold;
+    color: #FAA143; /* Optional: Ensure consistency with other links */
+}
+
 #bodytext {
     max-width: 800px;
     margin: auto;
@@ -78,10 +71,6 @@ a:link, a:visited {
 }
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 3em;
-    }
-
     h2 {
         font-size: 1.8em;
     }
@@ -94,10 +83,6 @@ a:link, a:visited {
 @media (max-width: 768px) {
     body {
         font-size: 16px;
-    }
-
-    h1 {
-        font-size: 2em;
     }
 
     h2 {
@@ -113,13 +98,13 @@ a:link, a:visited {
 
 <body>
 <div id="header">
-    <h1>Research</h1>
+    <!-- The large "Research" heading has been removed -->
 </div>
 
 <div id="menu">
     <hr>
     <a href="./index.html">Main</a> | 
-    <u><a href="./research.html">Research</a></u> |
+    <a href="./research.html" class="active">Research</a>
     <hr>
 </div>
 
@@ -133,7 +118,7 @@ a:link, a:visited {
     <p>The flagellum is vital for eukaryotic cell survival. We propose a method utilizing digital holographic microscopy (DHM) advantages, such as high-speed imaging and precise axial localization, to develop a versatile approach for four-dimensional tracking (X, Y, Z, time) of eukaryotic microorganisms' bodies and flagella, addressing challenges faced by existing methods. 
     We reconstructed for the first time the shape of a 200 nm diameter Chrysochromulina simplex flagellum and measured mouse sperm flagella over time, capturing approximately 800 points. 
     Our technique opens new avenues for studying flagella's roles in cellular functions and survival strategies, offering high-speed and precise 3D tracking at the nanoscale.</p>
-    <i>Relevant publications: </i><a href="https://doi.org/10.1117/12.3001870"><b>Nienaltowski, P.</b>, Slomka, J., Martinez-Perez, C., Colomb, T., Emery, Y. & Stocker, R. Unveiling the dynamics and structure of eukaryotic flagella: fast and precise 3D tracking using digital holographic microscopy. <i>Proc. SPIE PC12852, Quantitative Phase Imaging X</i> (2024).</a>
+    <i>Relevant publication: </i><a href="https://doi.org/10.1117/12.3001870"><b>Nienaltowski, P.</b>, Slomka, J., Martinez-Perez, C., Colomb, T., Emery, Y. & Stocker, R. Unveiling the dynamics and structure of eukaryotic flagella: fast and precise 3D tracking using digital holographic microscopy. <i>Proc. SPIE PC12852, Quantitative Phase Imaging X</i> (2024).</a>
     <hr>
     
     <h2>How can we track river organisms to better understand biodiversity changes?</h2>
@@ -142,14 +127,14 @@ a:link, a:visited {
     RODI replaces the collection cup of a drift net with a camera system, imaging organisms as they pass through before safely releasing them. 
     Field validation showed that RODI’s images enable a convolutional neural network to classify organisms at the family level with a weighted F1 score of 94% on a dataset of 4598 images. 
     This proof of concept highlights RODI’s potential as a cost-effective tool for advancing our understanding of organism drift and monitoring biodiversity impacts in freshwater ecosystems.</p>
-    <i>Relevant publications: </i><a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14130">de Schaetzen, F., Impiö, M., Wagner, B., <b>Nienaltowski, P.</b>, Arnold, M., Huber, M., Meyer, M., Raitoharju, J., Silva, L. G. M., & Stocker, R. The Riverine Organism Drift Imager: A new technology to study organism drift in rivers and streams. <i>Methods in Ecology and Evolution</i> <b>14</b> (2023).</a>
+    <i>Relevant publication: </i><a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14130">de Schaetzen, F., Impiö, M., Wagner, B., <b>Nienaltowski, P.</b>, Arnold, M., Huber, M., Meyer, M., Raitoharju, J., Silva, L. G. M., & Stocker, R. The Riverine Organism Drift Imager: A new technology to study organism drift in rivers and streams. <i>Methods in Ecology and Evolution</i> <b>14</b> (2023).</a>
     <hr>
     
     <h2>How can we measure cells without labeling to uncover differences between living and preserved ones?</h2>
     <p>The statistical analysis and comparison of biophysical parameters of living and fixed, mouse embryonic fibroblasts cells are presented. The parameters are calculated based on phase measurements performed by means of a digital, holographic microscope. 
     The phases are retrieved from off-axis, image plane holograms, followed by custom image segmentation and statistical analysis of cells’ surface, phase volume, and dry mass. 
     The results indicated statistically significant differences between fixed and living cell parameters, which is an important message for setting methodology for further diagnosis based on quantitative phase (label-free) analysis.</p>
-    <i>Relevant publications: </i><a href="http://photonics.pl/PLP/index.php/letters/article/view/12-5"><b>Nienaltowski, P.</b>, Baczewska, M. & Kujawisnka, M. Comparison of fixed and living biological cells parameters investigated with digital holographic microscope. <i>Photonics Lett. Pol</i> <b>12</b> (2020).</a>
+    <i>Relevant publication: </i><a href="http://photonics.pl/PLP/index.php/letters/article/view/12-5"><b>Nienaltowski, P.</b>, Baczewska, M. & Kujawisnka, M. Comparison of fixed and living biological cells parameters investigated with digital holographic microscope. <i>Photonics Lett. Pol</i> <b>12</b> (2020).</a>
 </div>
 
 <!-- Social Media Icons -->
