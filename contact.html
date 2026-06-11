@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Contact form for Patryk Nienaltowski.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Patryk Nienaltowski</title>
+    <link rel="icon" href="./images/icon4.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Patryk Nienaltowski home">
+        <span class="brand-mark">PN</span>
+        <span>Patryk Nienaltowski</span>
+      </a>
+      <nav class="tabs" aria-label="Primary navigation">
+        <a href="./index.html">Main</a>
+        <a href="./research.html">Research</a>
+        <a class="active" href="./contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page" aria-labelledby="page-title">
+        <div class="contact-visual" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="contact-shell">
+          <section class="page-intro contact-intro">
+            <h1 id="page-title">Contact</h1>
+            <p>Send a message about research, imaging, collaborations, or technical questions.</p>
+          </section>
+
+          <form class="contact-form" action="mailto:patryk.nienaltowski@lynceetec.com" method="post" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" required>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="8" required></textarea>
+            </label>
+
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
