@@ -15,16 +15,40 @@ if (rotatingText) {
 
 if (rotatingText && !reduceMotion.matches) {
   let endingIndex = 0;
+  let characterIndex = endings[0].length;
+  let deleting = true;
 
-  window.setInterval(() => {
-    rotatingText.classList.add("is-changing");
+  const typeNextCharacter = () => {
+    const ending = endings[endingIndex];
 
-    window.setTimeout(() => {
-      endingIndex = (endingIndex + 1) % endings.length;
-      rotatingText.textContent = endings[endingIndex];
-      rotatingText.classList.remove("is-changing");
-    }, 230);
-  }, 4200);
+    if (deleting) {
+      characterIndex -= 1;
+      rotatingText.textContent = ending.slice(0, characterIndex);
+
+      if (characterIndex === 0) {
+        deleting = false;
+        endingIndex = (endingIndex + 1) % endings.length;
+        window.setTimeout(typeNextCharacter, 320);
+        return;
+      }
+
+      window.setTimeout(typeNextCharacter, 24);
+      return;
+    }
+
+    characterIndex += 1;
+    rotatingText.textContent = endings[endingIndex].slice(0, characterIndex);
+
+    if (characterIndex === endings[endingIndex].length) {
+      deleting = true;
+      window.setTimeout(typeNextCharacter, 2200);
+      return;
+    }
+
+    window.setTimeout(typeNextCharacter, 38 + Math.random() * 28);
+  };
+
+  window.setTimeout(typeNextCharacter, 2200);
 }
 
 if (canvas) {

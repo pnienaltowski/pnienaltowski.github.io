@@ -1015,3 +1015,27 @@ h2 {
     grid-row: auto;
   }
 }
+
+/* Typewriter cursor */
+.landing-line em::after {
+  display: inline-block;
+  width: 2px;
+  height: 0.72em;
+  margin-left: 0.06em;
+  content: "";
+  background: var(--blue);
+  vertical-align: -0.04em;
+  animation: typewriter-caret 0.82s steps(1) infinite;
+}
+
+@keyframes typewriter-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-line em::after {
+    display: none;
+  }
+}
